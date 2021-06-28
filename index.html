@@ -1,0 +1,217 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand nav-logo ps-3" href="#">LOGO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse nav-center text-uppercase navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item" >
+            <a class="nav-link active" aria-current="page" href="#">1. Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">2. Sub Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">3. Brands</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">4. Products</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="heading  d-sm-flex py-4 ">
+      <button type="button" class="btn col-xl-1 col-lg-1 col-md-1  col-sm-2 col-12 yellow-cta back">BACK</button>
+      <div class="heading-name col-xl-8 col-lg-8 col-md-8  col-sm-7 col-12">
+        <div class="heading-name-top text-uppercase">Choose Products</div>
+        <div class="heading-name-bottom">Select Products you want to sell</div>
+      </div>
+      <button type="button" class="btn  col-xl-1 col-lg-1 col-md-1 col-sm-2 col-12 cta me-2 text-uppercase">SKIP</button>
+      <button type="button" class="btn  col-xl-2 col-lg-2 col-md-2 col-sm-3 col-12 yellow-cta add-products text-uppercase">ADD PRODUCTS</button>
+    </div>
+    <div class="select-options">
+      <button type="button" class="btn cta me-2 col-xl-2 col-lg-2 col-md-2 col-sm-3 col-12 text-uppercase">MEN'S FASHION</button>
+      <button type="button" class="btn cta me-2 col-xl-2 col-lg-2 col-md-3 col-sm-3 col-12 text-uppercase">WOMEN'S FASHION</button>
+      <button type="button" class="btn cta me-2 col-xl-2 col-lg-2 col-md-3 col-sm-3 col-12 text-uppercase">SPORTS & FITNESS</button>
+      <button type="button" class="btn cta me-2 col-xl-2 col-lg-2 col-md-2 col-sm-3 col-12 text-uppercase">BAGS & LUGGAGE</button>
+      <button type="button" class="btn cta me-2 col-xl-2 col-lg-3 col-md-4 col-sm-5 col-12 text-uppercase">CARS & BIKES ACCESSORIES</button>
+    </div>
+    <div class="select-search d-sm-flex align-items-center ">
+      <div class="select-search-name my-2 font-12 me-3 col-xl-2 col-lg-2 col-md-3 col-sm-5 col-12">Select Product Categories:</div>
+
+      <select class=" dropdown font-12 select-dropdown btn dropdown-toggle mx-2 col-xl-2 col-lg-2 col-md-3 col-sm-5 col-10">
+        <option value="volvo">Select</option>
+        <option value="saab">Anything</option>
+        <option value="fiat">Something</option>
+        <option value="audi">Onething</option>
+      </select>
+
+      <div class="search-input position-relative my-2 mx-2">
+        <input class="select-search-input me-3 font-12 btn select-dropdown col-xl-12 col-lg-12 col-md-12 col-sm-10 col-12 " placeholder="Search Product..">
+        <button type="button" class="btn search-btn text-uppercase ">
+          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" >
+            <path
+              d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z" />
+            </svg>
+        </button>
+        
+      </div>
+
+      <div class="form-check my-2 mx-2 font-12 col-xl-2 col-lg-2 col-md-4 col-sm-2 col-12">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Select All
+        </label>
+      </div>
+      <div class="form-check my-2 mx-2 last-form font-12 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-12">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Show Selected First
+        </label>
+      </div>
+
+    </div>
+    <hr>
+    <div class="row p-4">
+      <div class="card me-3 mt-2 shadow-sm p-1 mb-5 bg-white rounded" style="width: 12rem;">
+        <div class="form-check ">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+        </div>
+        <img src="/assets/1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text font-12">Texo Summer/Winter Rounded Neck Shrug</p>
+          <div class="font-12"><span class="color-red me-2">&#8377;899</span><span class="color-grey">&#8377;1999</span>
+          </div>
+        </div>
+      </div>
+      <div class="card me-3 mt-2 shadow-sm p-1 mb-5 bg-white rounded" style="width: 12rem;">
+        <div class="form-check ">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        </div>
+        <img src="/assets/img.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text font-12">Texo Summer/Winter Rounded Neck Shrug</p>
+          <div class="font-12"><span class="color-red me-2">&#8377;899</span><span class="color-grey">&#8377;1999</span>
+          </div>
+        </div>
+      </div>
+      <div class="card me-3 mt-2 shadow-sm p-1 mb-5 bg-white rounded" style="width: 12rem;">
+        <div class="form-check ">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+        </div>
+        <img src="/assets/3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text font-12">Texo Summer/Winter Rounded Neck Shrug</p>
+          <div class="font-12"><span class="color-red me-2">&#8377;899</span><span class="color-grey">&#8377;1999</span>
+          </div>
+        </div>
+      </div>
+      <div class="card me-3 mt-2 shadow-sm p-1 mb-5 bg-white rounded" style="width: 12rem;">
+        <div class="form-check ">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        </div>
+        <img src="/assets/4.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text font-12">Texo Summer/Winter Rounded Neck Shrug</p>
+          <div class="font-12"><span class="color-red me-2">&#8377;899</span><span class="color-grey">&#8377;1999</span>
+          </div>
+        </div>
+      </div>
+      <div class="card me-3 mt-2 shadow-sm p-1 mb-5 bg-white rounded" style="width: 12rem;">
+        <div class="form-check ">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        </div>
+        <img src="/assets/5.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text font-12">Texo Summer/Winter Rounded Neck Shrug</p>
+          <div class="font-12"><span class="color-red me-2">&#8377;899</span><span class="color-grey">&#8377;1999</span>
+          </div>
+        </div>
+      </div>
+      <div class="card me-3 mt-2 shadow-sm p-1 mb-5 bg-white rounded" style="width: 12rem;">
+        <div class="form-check ">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        </div>
+        <img src="/assets/6.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text font-12">Texo Summer/Winter Rounded Neck Shrug</p>
+          <div class="font-12"><span class="color-red me-2">&#8377;899</span><span class="color-grey">&#8377;1999</span>
+          </div>
+        </div>
+      </div>
+      <div class="card me-3 mt-2 shadow-sm p-1 mb-5 bg-white rounded" style="width: 12rem;">
+        <div class="form-check ">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+        </div>
+        <img src="/assets/7.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text font-12">Texo Summer/Winter Rounded Neck Shrug</p>
+          <div class="font-12"><span class="color-red me-2">&#8377;899</span><span class="color-grey">&#8377;1999</span>
+          </div>
+        </div>
+      </div>
+      <div class="card me-3 mt-2 shadow-sm p-1 mb-5 bg-white rounded" style="width: 12rem;">
+        <div class="form-check ">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        </div>
+        <img src="/assets/8.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text font-12">Texo Summer/Winter Rounded Neck Shrug</p>
+          <div class="font-12"><span class="color-red me-2">&#8377;899</span><span class="color-grey">&#8377;1999</span>
+          </div>
+        </div>
+      </div>
+      <div class="card me-3 mt-2 shadow-sm p-1 mb-5 bg-white rounded" style="width: 12rem;">
+        <div class="form-check ">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        </div>
+        <img src="/assets/9.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text font-12">Texo Summer/Winter Rounded Neck Shrug</p>
+          <div class="font-12"><span class="color-red me-2">&#8377;899</span><span class="color-grey">&#8377;1999</span>
+          </div>
+        </div>
+      </div>
+      <div class="card me-3 mt-2 shadow-sm p-1 mb-5 bg-white rounded" style="width: 12rem;">
+        <div class="form-check ">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        </div>
+        <img src="/assets/10.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text font-12">Texo Summer/Winter Rounded Neck Shrug</p>
+          <div class="font-12"><span class="color-red me-2">&#8377;899</span><span class="color-grey">&#8377;1999</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>
